@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postres - Home Taste | Comida casera a domicilio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="https://kit.fontawesome.com/64b155cc88.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand navlogo" href="#">Home Taste</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Quiénes somos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Comidas</a></li>
+              <li><a class="dropdown-item" href="#">Postres</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Envíos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contacto</a>
+          </li>
+        </ul>
+
+        <form class="d-flex">
+          <input class="form-control me-2 bg-light" type="search" placeholder="Buscar producto" aria-label="Search">
+          <button class="btn btn-outline-success bg-light" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <h1 class="titulo font-weight-bold text-center animate__animated animate__fadeIn">Postres</h1>
+
+  <div class="container-fluid">
+    <div class="row">  
+    <p id="precio-total">No hay productos en el carrito</p>
+    <a id="finalizar" onclick="finalizarCompra()"></a>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 w-100 ps-4 pb-3" id="producto">
+    
+  </div>
+  <footer>
+    <h3 class="footer__logo">Home Taste</h3>
+    <a href="#"><i class="icono fab fa-instagram"></i></a>
+    <a href="#"><i class="icono fab fa-facebook"></i></a>
+    <a href="#"><i class="icono fab fa-whatsapp"></i></a>
+    <div>
+        <ul>
+            <li class="font-weight-bold">HORARIO DE ENTREGAS:</li>
+            <li>Lun a Vier 17 pm-22 pm</li>
+            <li>Sab y Dom 11 am-15 pm</li>
+        </ul>
+    </div>
+</footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
