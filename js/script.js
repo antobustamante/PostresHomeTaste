@@ -6,7 +6,7 @@ if (localStorage.getItem("carrito") != null) {
   for(let i = 0; i < carrito.length; i++){
     aux += carrito[i].precio;
   }
-  document.getElementById("precio-total").innerHTML = "$" + aux;
+  $("#precio-total").html("$" + aux);
 }
 
 class Producto {
@@ -63,7 +63,7 @@ for(let i = 0; i<baseDeDatos.length; i++){
     `;
 }
 
-document.getElementById("producto").innerHTML = aux;
+$("#producto").html(aux);
 
 function agregarAlCarrito(producto) {
   carrito.push(producto);
@@ -72,5 +72,5 @@ function agregarAlCarrito(producto) {
   for(let i = 0; i < carrito.length; i++){
     aux += carrito[i].precio;
   }
-  document.getElementById("precio-total").innerHTML = "$" + aux;
+  $("#precio-total").html("$" + aux);
 }
