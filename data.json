@@ -1,0 +1,35 @@
+[{ "nombre": "Torta de Chocolate", 
+    "precio": 500,
+    "porciones": 8,
+    "stock": 3,
+    "img": "img/tortachoco.jpg" 
+}, {
+    "nombre": "Cheesecake de Frutos Rojos",
+    "precio": 600,
+    "porciones": 6,
+    "stock": 5,
+    "img": "img/cheesecake.jpg"
+}, {
+    "nombre": "Chocotorta",
+    "precio": 400,
+    "porciones": 8,
+    "stock": 3,
+    "img": "img/chocotorta.jpg"
+}, {
+    "nombre":"Torta Home Taste",
+    "precio": 500,
+    "porciones": 8,
+    "stock": 4,
+    "img": "img/tortafrutillas.jpg"
+}, {"nombre": "Lemon Pie",
+    "precio": 450,
+    "porciones": 6,
+    "stock": 9,
+    "img": "img/lemonpie.jpg"
+}, {"nombre": "Tiramisú",
+    "precio": 600,
+    "porciones": 8,
+    "stock": 2,
+    "img": "img/tiramisu.jpg"
+}]
+

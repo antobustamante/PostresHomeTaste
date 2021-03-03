@@ -9,39 +9,12 @@ if (localStorage.getItem("carrito") != null) {
   $("#precio-total").html("$" + aux);
 }
 
-class Producto {
-    constructor(
-        nombreTorta,
-        precioTorta,
-        porcionesTorta,
-        stockTorta,
-        imgTorta
-    )
-
-    {
-        this.nombre = nombreTorta;
-        this.precio = precioTorta;
-        this.porciones = porcionesTorta;
-        this.stock = stockTorta;
-        this.img = imgTorta;
-    }
-}
-
 let baseDeDatos = [];
 
-let productoUno = new Producto ("Torta de Chocolate", 500, 8, 3, "img/tortachoco.jpg");
-let productoDos = new Producto ("Cheesecake de Frutos Rojos", 600, 6, 5, "img/cheesecake.jpg");
-let productoTres = new Producto ("Chocotorta", 400, 10, 8, "img/chocotorta.jpg");
-let productoCuatro = new Producto ("Torta Home Taste", 500, 8, 4, "img/tortafrutillas.jpg");
-let productoCinco = new Producto ("Lemon Pie", 450, 6, 9, "img/lemonpie.jpg");
-let productoSeis = new Producto ("Tiramisú", 600, 8, 2, "img/tiramisu.jpg");
-
-baseDeDatos.push(productoUno);
-baseDeDatos.push(productoDos);
-baseDeDatos.push(productoTres);
-baseDeDatos.push(productoCuatro);
-baseDeDatos.push(productoCinco);
-baseDeDatos.push(productoSeis);
+$.get(
+  "../data.json",
+  function (valores) {
+  baseDeDatos = valores;
 
 let aux = ``;
 
@@ -63,7 +36,10 @@ for(let i = 0; i<baseDeDatos.length; i++){
     `;
 }
 
+
 $("#producto").html(aux);
+}
+)
 
 function agregarAlCarrito(producto) {
   carrito.push(producto);
@@ -74,3 +50,6 @@ function agregarAlCarrito(producto) {
   }
   $("#precio-total").html("$" + aux);
 }
+
+  
+
