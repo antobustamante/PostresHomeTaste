@@ -1,0 +1,156 @@
+body {
+  background-color: #f5ede2;
+  margin: 0px;
+}
+
+nav {
+  font-size: 2.5vh;
+  font-family: "Handlee";
+  background-color: #b32727;
+  -webkit-box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.3);
+          box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.3);
+}
+
+li {
+  padding: 0px 30px 0px 0px;
+}
+
+.dropdown-menu, .dropdown-item, .boton {
+  background-color: #b32727;
+}
+
+.navlogo {
+  color: #f5ede2 !important;
+  font-family: "Dancing Script";
+  font-size: 5vh;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.modal-backdrop {
+  position: unset !important;
+}
+
+.principal {
+  font-weight: 500;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../img/cheesecake.jpg");
+  height: 100vh;
+  width: auto;
+}
+
+.principal__texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-shadow: 1px 1px 5px rgba(50, 50, 50, 0.5);
+  color: #f5ede2;
+  font-family: "Bree Serif";
+  font-size: 13vh;
+  letter-spacing: 0.2vh;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-shadow: 1px 1px 5px rgba(50, 50, 50, 0.5);
+  color: #b32727;
+  font-family: "Bree Serif";
+  font-size: 8vh;
+}
+
+a, .texto {
+  color: white !important;
+  font-family: "Handlee";
+  text-decoration: none;
+}
+
+input {
+  font-family: "Piazzolla";
+  background-color: #b32727 !important;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-family: "Piazzolla";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  margin-top: 1vh;
+}
+
+footer .footer__logo {
+  font-family: "Dancing Script";
+  font-size: 3vh;
+  margin-left: 1vh;
+  padding-left: 1vh;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5vh;
+  list-style: none;
+  padding-top: 1vh;
+}
+
+.card-text {
+  font-family: "Piazzolla";
+  color: #b32727;
+}
+
+.card-title {
+  font-family: "Handlee";
+  color: #b32727;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
