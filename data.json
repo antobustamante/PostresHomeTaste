@@ -2,34 +2,40 @@
     "precio": 500,
     "porciones": 8,
     "stock": 3,
+    "descripcion": "Clásica pero inigualable. Cubierta con chocolate semi-amargo, rellena con dulce de leche y mousse de chocolate.",
     "img": "img/tortachoco.jpg" 
 }, {
     "nombre": "Cheesecake de Frutos Rojos",
     "precio": 600,
     "porciones": 6,
     "stock": 5,
+    "descripcion": "Una deliciosa cheesecake casera de frutos rojos orgánicos, no necesita más explicación.",
     "img": "img/cheesecake.jpg"
 }, {
     "nombre": "Chocotorta",
     "precio": 400,
     "porciones": 8,
     "stock": 3,
+    "descripcion": "La misma de siempre, pero mejorada. Cubierta con finas láminas de chocolate semiamargo y una delicada pizca de cacao",
     "img": "img/chocotorta.jpg"
 }, {
     "nombre":"Torta Home Taste",
     "precio": 500,
     "porciones": 8,
     "stock": 4,
+    "descripcion": "La favorita de todos. Cubierta con ganache de chocolate, rellena con dulce de leche, merengue italiano y crema de avellanas. Con un agregado de frutillas en su superficie.",
     "img": "img/tortafrutillas.jpg"
 }, {"nombre": "Lemon Pie",
     "precio": 450,
     "porciones": 6,
     "stock": 9,
+    "descripcion": "Exquisita tarta elaborada con limones frescos y un excepcional merengue italiano",
     "img": "img/lemonpie.jpg"
 }, {"nombre": "Tiramisú",
     "precio": 600,
     "porciones": 8,
     "stock": 2,
+    "descripcion": "Otro clásico reversionado con un agregado de crema de ron Bacardi añejo",
     "img": "img/tiramisu.jpg"
 }]
 

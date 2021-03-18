@@ -25,10 +25,10 @@ $.get(
           <img src="${baseDeDatos[i].img}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">${baseDeDatos[i].nombre}</h5>
-            <p class="card-text">Descripción del producto</p>
+            <p class="card-text">${baseDeDatos[i].descripcion}</p>
           </div>
           <div class="card-footer">
-            <input class="btn btn-primary" type="button" onclick='agregarAlCarrito(${JSON.stringify(baseDeDatos[i])})' value="Agregar al carrito">
+            <input class="btn btn-primary" type="button" onclick='agregarAlCarrito(${JSON.stringify(baseDeDatos[i])}); refresh()' value="Agregar al carrito">
             <small class="text-muted">Precio: ${baseDeDatos[i].precio}</small>
           </div>
         </div>
@@ -58,6 +58,7 @@ for(let i = 0; i<carrito.length; i++){
 }
 
 $("#mostrarCarrito").html(mostrarCarrito);
+
 
 
 
@@ -121,4 +122,8 @@ if (carrito.length==0){
   `
   $("#precio-total").html(aux2);
 }
+}
+
+function refresh() {    
+  window.location.reload();
 }
